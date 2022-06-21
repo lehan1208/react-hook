@@ -1,0 +1,13 @@
+.todo-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .todo-list {
+    display: flex;
+    align-items: center;
+
+    .delete-btn {
+      margin-left: 20px;
+    }
+  }
+}
