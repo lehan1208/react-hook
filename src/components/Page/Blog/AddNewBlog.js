@@ -23,9 +23,10 @@ function AddNewBlog({ handleAddNew }) {
     }
 
     let data = {
+      id: Math.floor(Math.random() * 1000),
       title: title,
       body: content,
-      userId: 1,
+      userId: Math.floor(Math.random() * 1000),
     };
 
     let res = await axios.post(

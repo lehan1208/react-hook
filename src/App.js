@@ -8,6 +8,8 @@ import Todo from './components/Page/Todo/Todo';
 import Blog from './components/Page/Blog/Blog';
 import DetailBlog from './components/Page/Blog/DetailBlog';
 import AddNewBlog from './components/Page/Blog/AddNewBlog';
+import NotFound from './components/Page/NotFound/NotFound';
+import Youtube from './components/Page/Youtubte/Youtube';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -32,6 +34,8 @@ const App = () => {
             <Route path='/blog/:id' element={<DetailBlog />} />
             <Route path='/add-new-blog' element={<AddNewBlog />} />
             <Route path='/covid' element={<Covid />} />
+            <Route path='/youtube' element={<Youtube />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
         </header>
       </div>

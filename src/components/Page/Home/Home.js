@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import './Home.scss';
 
 function Home() {
   const [state, setState] = useState('Le Han');
@@ -10,7 +11,7 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className='home-container'>
       <h1>Hello World with React from {state}</h1>
       <br />
       <input
@@ -19,7 +20,11 @@ function Home() {
         onChange={(e) => setName(e.target.value)}
       />
       <br />
-      <button type='submit' onClick={() => handleClick()}>
+      <button
+        className='change-btn'
+        type='submit'
+        onClick={() => handleClick()}
+      >
         Click me!
       </button>
     </div>

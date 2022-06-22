@@ -9,6 +9,7 @@ const Nav = () => {
       <NavLink to='/countdown'>Timer App</NavLink>
       <NavLink to='/blog'>Blog App</NavLink>
       <NavLink to='/covid'>Covid</NavLink>
+      <NavLink to='/youtube'>Youtube</NavLink>
     </div>
   );
 };
